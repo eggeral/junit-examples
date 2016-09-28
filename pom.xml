@@ -19,6 +19,8 @@
         <module>03-junit3-basics</module>
         <module>04-junit4-basics</module>
         <module>05-hamcrest-basics</module>
+        <module>06-calculator-junit</module>
+        <module>07-prime-factors</module>
     </modules>
 
 
