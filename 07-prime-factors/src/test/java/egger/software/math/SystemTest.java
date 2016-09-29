@@ -9,7 +9,7 @@ import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 
-public class MathSystemTest {
+public class SystemTest {
     @Test
     public void aUserCanCalculateThePrimeFactorsUsingTheCommandLine() throws IOException {
         // given
