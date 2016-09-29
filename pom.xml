@@ -22,6 +22,7 @@
         <module>06-calculator-junit</module>
         <module>07-prime-factors</module>
         <module>08-stack-calculator</module>
+        <module>09-gol</module>
     </modules>
 
 
