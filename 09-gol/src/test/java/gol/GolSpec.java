@@ -11,7 +11,7 @@ import org.junit.Test;
 
 public class GolSpec {
     @Test
-    public void aDeadCellWithExactlyThreeLivingNeigboursShouldBeAliveInTheNextGeneration() {
+    public void aDeadCellWithExactlyThreeLivingNeighboursShouldBeAliveInTheNextGeneration() {
         //given
         Cell cell = new Cell(new Position2D(0, 1), false);
         cell.setLivingNeighbours(3);
@@ -38,7 +38,7 @@ public class GolSpec {
     }
 
     @Test
-    public void aLivingCellWithTwoNeigboursShouldBeAliveInTheNextGeneration() {
+    public void aLivingCellWithTwoNeighboursShouldBeAliveInTheNextGeneration() {
         //given
         Cell cell = new Cell(new Position2D(0, 1), true);
         cell.setLivingNeighbours(2);
@@ -51,7 +51,7 @@ public class GolSpec {
     }
 
     @Test
-    public void aLivingCellWithThreeNeigboursShouldBeAliveInTheNextGeneration() {
+    public void aLivingCellWithThreeNeighboursShouldBeAliveInTheNextGeneration() {
         //given
         Cell cell = new Cell(new Position2D(0, 1), true);
         cell.setLivingNeighbours(3);
@@ -64,7 +64,7 @@ public class GolSpec {
     }
 
     @Test
-    public void aLivingCellWithMoreThanThreeNeigboursShouldBeDeadInTheNextGeneration() {
+    public void aLivingCellWithMoreThanThreeNeighboursShouldBeDeadInTheNextGeneration() {
         //given
         Cell cell = new Cell(new Position2D(0, 1), true);
         cell.setLivingNeighbours(4);
@@ -78,7 +78,7 @@ public class GolSpec {
     }
 
     @Test
-    public void aDeadCellWithLessThanThreeLivingNeigboursShouldBeDead() {
+    public void aDeadCellWithLessThanThreeLivingNeighboursShouldBeDead() {
         //given
         Cell cell = new Cell(new Position2D(0, 1), false);
         cell.setLivingNeighbours(2);
