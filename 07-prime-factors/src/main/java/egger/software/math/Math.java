@@ -27,7 +27,6 @@ public class Math {
                 else
                     result += (idx + "^" + count);
 
-                count = 0;
             }
         }
 
