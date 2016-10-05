@@ -18,7 +18,8 @@ public class MathTest {
         assertThat(fibonacci(6), is(8L));
         assertThat(fibonacci(20), is(6765L));
 
-        //assertThat(fibonacci(51), is(20365011074L)); // wow that takes really long!!! (1m)
+        assertThat(fibonacci(51), is(20365011074L)); // wow that takes really long using the recursive solution!!! (1m)
+        assertThat(fibonacci(92), is(7540113804746346429L)); // last long before long overflow
     }
 
     @Test(expected = IllegalArgumentException.class)
@@ -31,5 +32,9 @@ public class MathTest {
         fibonacci(-1);
     }
 
+    @Test(expected = ArithmeticException.class)
+    public void fibonacciOf93ThrowsBecauseOfLongOverflow() {
+        fibonacci(93);
+    }
 
 }
