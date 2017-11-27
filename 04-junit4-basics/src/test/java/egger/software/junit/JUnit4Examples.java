@@ -10,6 +10,7 @@ import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
+import org.junit.rules.TemporaryFolder;
 
 public class JUnit4Examples {
 
@@ -66,5 +67,10 @@ public class JUnit4Examples {
     public void ignoredTest() {
         fail("This test is ignored");
     }
+
+
+    // temporary folders
+    @Rule
+    TemporaryFolder tmpFolder = new TemporaryFolder();
 
 }
